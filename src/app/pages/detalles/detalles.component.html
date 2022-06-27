@@ -1,0 +1,31 @@
+
+
+
+
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-3 mt-2">
+            <div class="card">
+                <img class="img-thumbnail"                   
+                    [src]="'https://image.tmdb.org/t/p/original/' + detail.poster_path" >
+                
+                <div class="card-footer"></div>
+            </div>
+        </div>
+        <div class="col-6 mt-2">
+            <div>
+                <blockquote class="blockquote">
+                    <h4><p>{{detail.title}}</p></h4>
+                </blockquote>
+                    <figcaption class="blockquote-footer">
+                        {{detail.release_date}}
+                    </figcaption>
+                <blockquote>
+                    <cite title="Source Title">{{detail.overview}}</cite>
+                </blockquote>
+                                      
+                <div class="card-footer" class="text-center text-break"></div>
+            </div>
+        </div>
+    </div>
+</div>

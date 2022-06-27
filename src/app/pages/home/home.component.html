@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-3 mt-2" *ngFor="let movie of popularMovies.results ">
+            <div class="card">
+                <img class="img-thumbnail"                   
+                    [src]="'https://image.tmdb.org/t/p/original/' + movie.poster_path" 
+                    (click)="detalle(movie.id)">
+                
+                <div class="card-footer" class="text-center text-break">{{ movie.title}}</div>
+            </div>
+        </div>
+    </div>
+</div>
